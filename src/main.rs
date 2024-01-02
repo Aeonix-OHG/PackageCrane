@@ -1,15 +1,3 @@
-/*
- * Copyright (c) 2024 Aeonix https://github.com/Aeonix-OHG
- * All Rights Reserved
- * Project: src
- * File: main.rs
- * 
- * Author: Jan Simon Schmitt
- * Created: 31 12 2023
- * Modified: 02 01 2024
- * Modified By: Jan Simon Schmitt
- */
-
 
 use std::env;
 
