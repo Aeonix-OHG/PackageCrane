@@ -40,7 +40,7 @@ fn main() {
         let package = &args[2];
     }
     else if option == "crpackage" {
-
+        let package = &args[2];
     }
     else {
 
