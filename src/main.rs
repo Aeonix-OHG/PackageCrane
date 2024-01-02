@@ -1,8 +1,23 @@
-use gfxsrc;
+/*
+ * Copyright (c) 2023 Aeonix https://github.com/Aeonix-OHG
+ * All Rights Reserved
+ * Project: src
+ * File: main.rs
+ * 
+ * Author: Jan Simon Schmitt
+ * Created: 31 12 2023
+ * Modified: 31 12 2023
+ * Modified By: Jan Simon Schmitt
+ */
 
+use gfxsrc;
+use std::env;
 
 
 fn main() {
+    let args: Vec<String> = env::args().collect();
+    let option = &args[1];
+    let package = &args[2]; 
     let mut app = gfxsrc::Screen::new(30, 30, ' '.to_string());
     app.set_title("Package_Crane", "#FFFFFF");
     app.addoutline("#FFFF00");
