@@ -1,23 +1,50 @@
 /*
- * Copyright (c) 2023 Aeonix https://github.com/Aeonix-OHG
+ * Copyright (c) 2024 Aeonix https://github.com/Aeonix-OHG
  * All Rights Reserved
  * Project: src
  * File: main.rs
  * 
  * Author: Jan Simon Schmitt
  * Created: 31 12 2023
- * Modified: 31 12 2023
+ * Modified: 02 01 2024
  * Modified By: Jan Simon Schmitt
  */
 
-use gfxsrc;
+
 use std::env;
 
 
 fn main() {
     let args: Vec<String> = env::args().collect();
     let option = &args[1];
-    let package = &args[2]; 
+    // let package = &args[2]; 
+    if option == "install" {
+        let package = &args[2];
+    }
+    else if option == "search" {
+        let package = &args[2];
+    }
+    else if option == "update" {
+
+    }
+    else if option == "upgrade" {
+
+    }
+    else if option == "addlist" {
+        let list = &args[2];
+    }
+    else if option == "removelist" {
+        let list = &args[2];
+    }
+    else if option == "remove" {
+        let package = &args[2];
+    }
+    else if option == "crpackage" {
+
+    }
+    else {
+
+    }
     let mut app = gfxsrc::Screen::new(30, 30, ' '.to_string());
     app.set_title("Package_Crane", "#FFFFFF");
     app.addoutline("#FFFF00");
